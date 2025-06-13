@@ -6,7 +6,7 @@ interface TeamsProps {
   title: string;
 }
 
-const Teams = async ({ title }: TeamsProps) => {
+const Teams = async ({ }) => {
   const users = await GetTeams();
   if (!users) return null;
   console.log(users);
@@ -52,13 +52,7 @@ const Teams = async ({ title }: TeamsProps) => {
                 </p>
               </div>
 
-              <div className="w-full pt-4 mt-2 border-t border-[#fdefd7]/20">
-                <p className="bg-[#fdefd7] text-[#66371d] px-5 py-2.5 rounded-xl text-center
-                              text-sm md:text-base font-semibold shadow-md 
-                              hover:bg-[#f0e3d0] transition-colors duration-300">
-                  {title}
-                </p> 
-              </div>
+             
             </div>
           );
         })}

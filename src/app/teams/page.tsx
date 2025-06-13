@@ -10,7 +10,7 @@ const page =  () => {
   return (
     <main>
         <Suspense fallback={<TeamsSkeleton />}>
-        <Teams title="Contact" />
+        <Teams />
         </Suspense>
     </main>
   )
